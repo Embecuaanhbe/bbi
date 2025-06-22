@@ -78,6 +78,14 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <!-- Tự phát nhạc sau lần click đầu -->
+    <script>
+      document.addEventListener("click", function () {
+        const audio = new Audio("music.mp3");
+        audio.loop = true;
+        audio.play();
+      }, { once: true });
+    </script>
 </body>
 
 </html>
